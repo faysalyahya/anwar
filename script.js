@@ -8,7 +8,7 @@
 //   gate (captcha + honeypot) and unlocks the download, but does NOT
 //   email submissions to you.
 // =====================================================================
-const WEB3FORMS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
+const WEB3FORMS_KEY = '70cdb778-d775-48fd-abd6-9ee6627debbc';
 const CV_FILENAME  = 'AnwarYahyaCV.pdf';
 
 // CV PDF embedded as base64 (generated from CV 2026)
