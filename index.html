@@ -3,109 +3,283 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anwar Yahya</title>
+  <meta name="description" content="Anwar Ahmed Mahanan Yahya — Business Management student at Oxford Brookes, Private Equity track, Spain–Morocco corridor specialist.">
+  <meta name="author" content="Anwar Ahmed Mahanan Yahya">
+  <title>Anwar Yahya — Private Equity · Oxford · Spain–Morocco</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    :root {
-      --bg: #090908;
-      --bg2: #0f0e0d;
-      --gold: #b8966a;
-      --gold-light: #d4b48a;
-      --gold-dim: rgba(184,150,106,0.15);
-      --white: #f0ece4;
-      --muted: #6a6460;
-      --faint: #2a2724;
-      --serif: 'Cormorant Garamond', serif;
-      --sans: 'Montserrat', sans-serif;
-    }
-    html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--white); font-family: var(--sans); font-weight: 300; line-height: 1.7; overflow-x: hidden; }
-    body::before {
-      content: ''; position: fixed; inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      opacity: 0.3; pointer-events: none; z-index: 100;
-    }
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; background: linear-gradient(to bottom, rgba(9,9,8,0.95), transparent); }
-    .nav-logo { font-family: var(--serif); font-size: 15px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); text-decoration: none; }
-    .nav-links { display: flex; gap: 36px; list-style: none; }
-    .nav-links a { font-size: 9px; font-weight: 400; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.3s; }
-    .nav-links a:hover { color: var(--gold); }
-    .hero { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px; position: relative; overflow: hidden; }
-    .hero::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(ellipse, rgba(184,150,106,0.05) 0%, transparent 70%); pointer-events: none; }
-    .hero-location { font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--muted); margin-bottom: 48px; animation: slideUp 1.2s ease 0.3s both; }
-    .hero-name { font-family: var(--serif); font-size: clamp(38px, 6vw, 72px); font-weight: 300; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.05; animation: slideUp 1.2s ease 0.5s both; }
-    .hero-divider { display: flex; align-items: center; gap: 14px; margin: 36px auto; width: 180px; animation: fadeIn 1s ease 0.9s both; }
-    .hero-divider span { flex: 1; height: 1px; background: var(--gold); opacity: 0.4; }
-    .hero-divider i { width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); }
-    .hero-tagline { font-family: var(--serif); font-size: clamp(15px, 2vw, 20px); font-style: italic; font-weight: 300; color: var(--gold-light); letter-spacing: 0.06em; animation: slideUp 1.2s ease 1s both; }
-    .hero-cta { margin-top: 56px; display: flex; gap: 24px; animation: slideUp 1.2s ease 1.2s both; }
-    .btn-primary { font-size: 9px; font-weight: 400; letter-spacing: 0.3em; text-transform: uppercase; color: var(--bg); background: var(--gold); padding: 14px 32px; text-decoration: none; transition: 0.3s; }
-    .btn-primary:hover { background: var(--gold-light); }
-    .btn-secondary { font-size: 9px; font-weight: 400; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(184,150,106,0.4); padding: 14px 32px; text-decoration: none; transition: 0.3s; }
-    .btn-secondary:hover { border-color: var(--gold); color: var(--gold-light); }
-    section { padding: 120px 48px; max-width: 1000px; margin: 0 auto; }
-    .section-label { font-size: 9px; font-weight: 400; letter-spacing: 0.45em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
-    .section-title { font-family: var(--serif); font-size: clamp(28px, 4vw, 46px); font-weight: 300; letter-spacing: 0.06em; line-height: 1.15; margin-bottom: 56px; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-    .about-text p { font-size: 14px; color: #b8b4ae; margin-bottom: 20px; }
-    .about-pillars { display: flex; flex-direction: column; gap: 28px; }
-    .pillar { padding: 24px 28px; border: 1px solid var(--faint); border-left: 2px solid var(--gold); background: var(--bg2); transition: 0.3s; }
-    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--faint); }
-    .edu-card { background: var(--bg); padding: 40px 36px; }
-    .exp-item { display: grid; grid-template-columns: 200px 1fr; gap: 48px; padding: 48px 0; border-bottom: 1px solid var(--faint); }
-    @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    .reveal { opacity: 0; transform: translateY(24px); transition: 0.8s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html" class="nav-logo">A.Ya</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-    </ul>
-  </nav>
 
-  <div class="hero">
-    <p class="hero-location">Oxford &nbsp;&nbsp; Geneva &nbsp;&nbsp; Madrid &nbsp;&nbsp; Casablanca</p>
-    <h1 class="hero-name">Anwar Yahya</h1>
-    <div class="hero-divider"><span></span><i></i><span></span></div>
-    <p class="hero-tagline">Private Equity &nbsp;&nbsp; Oxford &nbsp;&nbsp; Spain&ndash;Morocco Corridor</p>
-    <div class="hero-cta">
-      <a href="#about" class="btn-primary">Explore</a>
-      <a href="https://nadorenergycluster.com/AnwarYahyaCV.pdf" class="btn-secondary">Download CV</a>
+<nav>
+  <a href="#top" class="nav-logo">A.Y</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero" id="top">
+  <p class="hero-location">Oxford &nbsp;·&nbsp; Geneva &nbsp;·&nbsp; Madrid</p>
+  <h1 class="hero-name">Anwar Yahya</h1>
+  <div class="hero-divider"><span></span><i></i><span></span></div>
+  <p class="hero-tagline">Private Equity &nbsp;·&nbsp; Oxford &nbsp;·&nbsp; Spain–Morocco Corridor</p>
+  <div class="hero-cta">
+    <a href="#about" class="btn-primary">Explore</a>
+    <button type="button" class="btn-secondary" onclick="openCvModal()">Download CV</button>
+  </div>
+  <p class="hero-scroll">Scroll</p>
+</div>
+
+<section id="about" class="reveal">
+  <p class="section-label">About</p>
+  <h2 class="section-title">A bridge between<br><em>two markets</em></h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I am a <strong>final-year Business Management student</strong> at Oxford Brookes University, graduating May 2026, with a BBA in Business Administration from EU Business School Geneva.</p>
+      <p>My academic and professional focus sits at the intersection of <strong>Private Equity, M&amp;A advisory and value creation</strong> in transport, logistics and renewable infrastructure — applied to the Spain–Morocco trade corridor.</p>
+      <p>Three summers of port-side operations at Nador (Somanador and Navantia Shipping) and Rabat (Agriland) gave me a working knowledge of how cargo, customs and capital actually move between Europe and North Africa — the same flows now being reshaped by <strong>Nador West Med</strong>, opening 2026.</p>
+    </div>
+    <div class="about-pillars">
+      <div class="pillar">
+        <p class="pillar-title">International Formation</p>
+        <p>Dual degree across Oxford Brookes and EU Business School Geneva. Master's in Artificial Intelligence in progress at Universidad Isabel I.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-title">Corridor Expertise</p>
+        <p>Three internships at the Port of Nador and in Rabat. First-hand exposure to project cargo, vessel agency and perishable export logistics.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-title">Trilingual Operator</p>
+        <p>Spanish native, fluent English, working French. Daily multilingual coordination with shipping lines, customs and OEMs.</p>
+      </div>
     </div>
   </div>
+</section>
 
-  <section id="about" class="reveal">
-    <p class="section-label">About</p>
-    <h2 class="section-title">A bridge between<br>two markets</h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>I am a <strong>final-year Business Management student</strong> at Oxford Brookes University, graduating May 2026, with a BBA from EU Business School Geneva.</p>
-        <p>What sets me apart is a lived understanding of the <strong>Spain-Morocco trade corridor</strong>. Native in both Spanish and Arabic, I bring perspective that cannot be learned in a classroom.</p>
+<section id="education" class="reveal">
+  <p class="section-label">Education</p>
+  <h2 class="section-title">Formed across<br><em>three institutions</em></h2>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <p class="edu-date">Sep 2025 – May 2026</p>
+      <h3>Oxford Brookes University</h3>
+      <p class="edu-place">Oxford, United Kingdom</p>
+      <p class="edu-degree">BA (Hons) Business Management</p>
+      <div class="edu-body">
+        <p>Coursework: Financial Reporting &amp; Analysis, International Strategic Management, Decision Analysis.</p>
+        <p>Permanent Life Member, The Oxford Union Society. Member, Brookes Entrepreneurs.</p>
       </div>
-      <div class="about-pillars">
-        <div class="pillar">
-          <p class="pillar-title">International Formation</p>
-          <p>Dual degree across Oxford and Geneva. Trilingual Spanish native, English fluent, French B1.</p>
+    </div>
+    <div class="edu-card">
+      <p class="edu-date">Sep 2022 – Sep 2025</p>
+      <h3>EU Business School</h3>
+      <p class="edu-place">Geneva, Switzerland</p>
+      <p class="edu-degree">BBA in Business Administration</p>
+      <div class="edu-body">
+        <p>Coursework: Corporate Finance, Project Management, Supply Chain Management, Transformational Change Management.</p>
+        <p>Member of the Consulting Club — case competitions and live-client simulations.</p>
+      </div>
+    </div>
+    <div class="edu-card">
+      <p class="edu-date">Jan 2026 – Aug 2026</p>
+      <h3>Universidad Isabel I</h3>
+      <p class="edu-place">Spain · Online</p>
+      <p class="edu-degree">Master's in Artificial Intelligence</p>
+      <div class="edu-body">
+        <p>Workflow automation (Make, n8n, APIs), business applications of AI, AI legal framework, AI-driven entrepreneurship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="research reveal" id="research">
+  <div class="research-inner">
+    <p class="section-label">Research</p>
+    <h2 class="section-title">Dissertation —<br>the <em>Nador</em> corridor</h2>
+    <div class="research-grid">
+      <div class="research-left">
+        <span class="tag">Oxford Brookes · 2025–2026</span>
+        <h3>Supply chain analysis of <em>AEOLON–NORDEX</em> at the Port of Nador West Med</h3>
+        <p>Inbound sourcing of raw materials from Asia and Europe, and outbound export of wind turbine blades to European markets.</p>
+      </div>
+      <div class="research-right">
+        <p>The dissertation maps the supply chain of the AEOLON wind farm and the NORDEX N175 blade flow through the Port of Nador, applying <strong>Transaction Cost Economics (TCE)</strong> and the <strong>Resource-Based View (RBV)</strong> to the wind industry, project cargo logistics and emerging infrastructure.</p>
+        <p>It builds on first-hand fieldwork during the Somanador internship — the discharge of NORDEX N175 blades aboard the <em>M/V Superfast Levante</em> in November and December 2025 — and connects operational reality with the strategic implications of <strong>Nador West Med</strong>, the deep-water port opening 2026 that will reshape container and energy logistics across the Western Mediterranean.</p>
+        <div class="research-frameworks">
+          <span class="framework">TCE</span>
+          <span class="framework">RBV</span>
+          <span class="framework">Project Cargo</span>
+          <span class="framework">Wind Energy</span>
+          <span class="framework">Nador West Med</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+<section id="experience" class="reveal">
+  <p class="section-label">Experience</p>
+  <h2 class="section-title">Three summers<br>at the <em>port edge</em></h2>
+
+  <div class="exp-item">
+    <div class="exp-date">May – Aug 2025</div>
+    <div class="exp-content">
+      <h3>Somanador S.A. — Port of Nador, Morocco</h3>
+      <p class="exp-role">Logistics &amp; Port Operations Intern</p>
+      <ul>
+        <li>Discharge and handling of NORDEX N175 wind turbine blades (M/V <em>Superfast Levante</em>, Nov/Dec 2025) bound for the AEOLON wind farm: cradles, lifting plans, customs coordination, and interface with OEM, EPC contractor and port authority.</li>
+        <li>Multimodal shipment tracking (FTL and groupage) across the Morocco–Spain corridor: lead-time analysis, cost structure and backhaul economics on legs returning empty after wind-component deliveries.</li>
+        <li>Customs clearance cycles under Somanador's AEO status (BLs, manifests, import/export declarations) and the working-capital impact of detention and demurrage.</li>
+        <li>Port operational KPIs (berth occupancy, vessel turnaround, dwell time) in the run-up to the 2026 opening of Nador West Med.</li>
+        <li>Daily interface with shipping lines, freight forwarders, port authorities and customs in Spanish, French and English.</li>
+        <li>Direct exposure to the cost and cycle levers driving operator margins in port logistics — relevant to transport, logistics and infrastructure analysis in PE and M&amp;A.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-date">Jul – Aug 2023</div>
+    <div class="exp-content">
+      <h3>Navantia Shipping — Port of Nador, Morocco</h3>
+      <p class="exp-role">Logistics &amp; Port Operations Intern</p>
+      <ul>
+        <li>Supported vessel-agency operations: arrival/departure documentation, port-call coordination, and interface with customs, pilots, towage and stevedoring.</li>
+        <li>Tracked operational and commercial KPIs (turnaround, port costs, counterparty performance) — foundation for understanding ship-agency unit economics.</li>
+        <li>Project-cargo documentation (including wind components) involving non-standard handling and multi-stakeholder cross-border coordination.</li>
+        <li>Multilingual environment (ES/EN/FR) with shipowners, charterers, port authorities and inland carriers.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-date">Jul – Aug 2022</div>
+    <div class="exp-content">
+      <h3>Agriland SARL — Rabat, Morocco</h3>
+      <p class="exp-role">Trade &amp; Export Operations Intern</p>
+      <ul>
+        <li>Supported export logistics of perishable agricultural products to European buyers: cost / transit-time / quality trade-offs typical of fresh-produce supply chains.</li>
+        <li>Analysed distribution routes and proposed improvements to reduce transit times to export ports.</li>
+        <li>Reviewed shipping and customs documentation alongside producers, forwarders and customs brokers.</li>
+        <li>End-to-end view of the farm-to-international-freight chain, connecting directly to the maritime side of the same Morocco–Europe trade flows.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="reveal">
+  <p class="section-label">Certifications &amp; Affiliations</p>
+  <h2 class="section-title">Beyond the<br><em>classroom</em></h2>
+  <div class="certs-grid">
+    <div class="cert-card">
+      <p class="cert-meta">Jun – Aug 2026 · Certificate Program</p>
+      <h3>Wharton Online &amp; Wall Street Prep</h3>
+      <p><strong>Private Equity Certificate Program</strong> — LBO modelling, due diligence, private-company valuation, operating models and PE case-interview preparation. Faculty and guest speakers from Blackstone, Carlyle, Thoma Bravo, Ares and Oliver Wyman.</p>
+    </div>
+    <div class="cert-card">
+      <p class="cert-meta">Permanent Life Member</p>
+      <h3>The Oxford Union Society</h3>
+      <p>One of the world's oldest debating societies, founded 1823. Permanent Life Member with full access to debates, addresses and the Union network. Also a Member of <strong>Brookes Entrepreneurs</strong> at Oxford Brookes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact reveal">
+  <div class="contact-inner">
+    <p class="section-label" style="text-align: center;">Contact</p>
+    <h2>Let's <em>talk</em></h2>
+    <p class="contact-tagline">Open to Private Equity, M&amp;A and infrastructure-investment opportunities. Based between Oxford and Madrid.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <p class="label">Email</p>
+        <p class="value"><a href="mailto:anwar@anwar.es">anwar@anwar.es</a></p>
+      </div>
+      <div class="contact-item">
+        <p class="label">Phone</p>
+        <p class="value"><a href="tel:+34628605864">+34 628 60 58 64</a></p>
+      </div>
+      <div class="contact-item">
+        <p class="label">Web</p>
+        <p class="value"><a href="https://anwar.es">anwar.es</a></p>
+      </div>
+    </div>
+    <div class="contact-cta">
+      <a href="mailto:anwar@anwar.es" class="btn-primary">Get in touch</a>
+      <button type="button" class="btn-secondary" onclick="openCvModal()">Download CV</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="footer-interests">Private Equity · M&amp;A Advisory · Value Creation · Wind &amp; Renewables · Project Logistics · Entrepreneurship</p>
+  <p class="footer-langs">Spanish (native) &nbsp;·&nbsp; English (fluent) &nbsp;·&nbsp; French</p>
+  <p class="footer-rights">© <span id="year">2026</span> Anwar Ahmed Mahanan Yahya</p>
+</footer>
+
+<!-- CV REQUEST MODAL -->
+<div class="modal-overlay" id="cvModal" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+  <div class="modal">
+    <button type="button" class="modal-close" onclick="closeCvModal()" aria-label="Close">&times;</button>
+
+    <div class="form-state" id="formState">
+      <p class="modal-label">Request CV</p>
+      <h2 id="cvModalTitle">Download the <em>CV</em></h2>
+      <p class="modal-sub">A short introduction helps me follow up. Your CV opens as soon as the form is sent.</p>
+
+      <div class="form-error" id="formError"></div>
+
+      <form id="cvForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="cv_name">Name <span class="req">*</span></label>
+            <input type="text" id="cv_name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="cv_email">Email <span class="req">*</span></label>
+            <input type="email" id="cv_email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="cv_company">Company / Firm <span class="req">*</span></label>
+            <input type="text" id="cv_company" name="company" required autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="cv_role">Role</label>
+            <input type="text" id="cv_role" name="role" autocomplete="organization-title">
+          </div>
+          <div class="field full">
+            <label for="cv_message">Message <span class="opt">(optional)</span></label>
+            <textarea id="cv_message" name="message" rows="3"></textarea>
+          </div>
+          <div class="field honeypot" aria-hidden="true">
+            <label for="cv_website">Website</label>
+            <input type="text" id="cv_website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="captcha-row">
+          <div class="captcha-q">Verification: what is <span id="capA">?</span> + <span id="capB">?</span>?</div>
+          <input type="number" id="cv_captcha" required aria-label="Captcha answer">
+        </div>
+
+        <button type="submit" class="btn-primary" id="cvSubmit">Send &amp; Download</button>
+        <p class="modal-fine">Your information is only used to follow up. No newsletter, no third parties.</p>
+      </form>
+    </div>
+
+    <div class="modal-success" id="successState">
+      <div class="check">&#10003;</div>
+      <h3>Thank you, <em><span id="thanksName">friend</span></em></h3>
+      <p>The CV download has started. If it didn't open automatically, use the button below.</p>
+      <a href="AnwarYahyaCV.pdf" download class="btn-primary" id="manualDownload" style="display:inline-block; padding: 14px 32px; width: auto;">Download CV</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
